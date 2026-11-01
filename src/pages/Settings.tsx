@@ -14,6 +14,12 @@ const KNOWN: { key: string; label: string; desc: string; kind: "text" | "number"
   { key: "public_terms_url", label: "Terms URL", desc: "Terms & conditions link", kind: "text" },
   { key: "public_privacy_url", label: "Privacy URL", desc: "Privacy policy link", kind: "text" },
   { key: "priority_window_minutes", label: "Priority window (minutes)", desc: "How long priority drivers see a new duty before everyone else", kind: "number" },
+  { key: "market_max_open_posts", label: "Market: max open posts per user", desc: "How many open market duties one driver / agency can have at a time", kind: "number" },
+  { key: "market_free_alert_limit", label: "Market: free duty alerts", desc: "How many duty alerts a user can keep switched on for free", kind: "number" },
+  { key: "market_post_requires_verified", label: "Market: only verified users can post", desc: "true = unverified drivers / agencies cannot post in the market", kind: "bool" },
+  { key: "market_booked_reminder_hours", label: "Market: 'did you give it?' reminder (hours)", desc: "Hours after calls start before asking the poster to mark the duty booked", kind: "number" },
+  { key: "public_web_base_url", label: "Share link base URL", desc: "Used in duty / group share links, e.g. https://api.yourdomain.com", kind: "text" },
+  { key: "public_play_store_url", label: "Play Store URL", desc: "Share pages send people here to install the app", kind: "text" },
   { key: "require_trip_otp", label: "Require trip OTP", desc: "true = driver must enter the customer's OTP to start a trip", kind: "bool" },
 ];
 

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import {
   Activity, AppWindow, BadgeIndianRupee, Bolt, Building2, Bus, Car, FileCheck2, KeyRound, LayoutDashboard, LifeBuoy,
-  LogOut, Megaphone, MessageSquareWarning, Settings, ShieldCheck, SlidersHorizontal, Truck, UserCog,
+  LogOut, Megaphone, MessageSquareWarning, Settings, ShieldCheck, SlidersHorizontal, Store, Truck, UserCog,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { authApi } from "../api/api";
@@ -26,6 +26,7 @@ export const NAV: NavItem[] = [
   { path: "/agencies", label: "Agencies", sub: "Approve, block and manage agencies", icon: Building2, section: "main", bottom: true },
   { path: "/drivers", label: "Drivers", sub: "All drivers across the platform", icon: Car, section: "main", bottom: true },
   { path: "/duties", label: "Duties", sub: "Monitor and control every duty", icon: Truck, section: "main", bottom: true },
+  { path: "/market", label: "Duty Market", sub: "Duties drivers & agencies post for each other · Groups", icon: Store, section: "main" },
   { path: "/financial", label: "Financial", sub: "Subscriptions · Payments · Plans", icon: BadgeIndianRupee, section: "main", bottom: true },
   { path: "/documents", label: "Documents", sub: "KYC verification queue", icon: FileCheck2, section: "ops" },
   { path: "/support", label: "Support Tickets", sub: "Help requests from drivers and agencies", icon: LifeBuoy, section: "ops" },

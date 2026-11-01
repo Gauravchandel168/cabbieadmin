@@ -66,7 +66,7 @@ export function statusColor(s: string | null | undefined): string {
   switch (s) {
     case "open": case "pending": case "unpaid": case "trial": case "info": case "created":
       return "var(--info)";
-    case "accepted": case "reached": case "in_progress": case "partial": case "investigating":
+    case "accepted": case "reached": case "booked": case "in_progress": case "partial": case "investigating":
     case "waiting_on_user": case "past_due": case "busy": case "high":
       return "var(--warning)";
     case "completed": case "active": case "approved": case "verified": case "paid": case "resolved":
@@ -80,7 +80,7 @@ export function statusColor(s: string | null | undefined): string {
 }
 
 const STATUS_LABELS: Record<string, string> = {
-  open: "Open", pending: "Pending", accepted: "Accepted", reached: "Reached", in_progress: "On Trip",
+  open: "Open", pending: "Pending", booked: "Booked", accepted: "Accepted", reached: "Reached", in_progress: "On Trip",
   completed: "Completed", cancelled: "Cancelled", expired: "Expired", approved: "Approved", blocked: "Blocked",
   suspended: "Suspended", active: "Active", verified: "Verified", rejected: "Rejected", unpaid: "Unpaid",
   partial: "Partly paid", paid: "Paid", trial: "Trial", past_due: "Past due", resolved: "Resolved",

@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import Agencies from "./pages/Agencies";
 import Drivers from "./pages/Drivers";
 import Duties from "./pages/Duties";
+import Market from "./pages/Market";
 import Financial from "./pages/Financial";
 import Documents from "./pages/Documents";
 import Support from "./pages/Support";
@@ -37,6 +38,7 @@ export default function App() {
         <Route path="agencies" element={<Agencies />} />
         <Route path="drivers" element={<Drivers />} />
         <Route path="duties" element={<Duties />} />
+        <Route path="market" element={<Market />} />
         <Route path="financial" element={<Financial />} />
         <Route path="documents" element={<Documents />} />
         <Route path="support" element={<Support />} />
